@@ -1,0 +1,30 @@
+{
+  "name": "dsh-qq-notifier",
+  "version": "0.2.0",
+  "description": "DSH → QQ 通知器：把 DSH 的授权请求/任务完成推到 QQ，并支持在 QQ 上只读查询任务进度",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "notifier.mjs",
+    "config.json",
+    "cordis.patch.yml",
+    "install.mjs"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "install-plugin": "node install.mjs"
+  },
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "qq", "snowluma", "notifier"]
+}

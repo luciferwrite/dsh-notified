@@ -1,0 +1,21 @@
+{
+  "_comment": "只需改 owner.qq 为接收通知的 QQ 号；其余留空即可自动发现。",
+  "owner": {
+    "qq": 0
+  },
+  "dsh": {
+    "baseUrl": "auto",
+    "workspaces": []
+  },
+  "snowluma": {
+    "dir": ""
+  },
+  "notify": {
+    "approval": true,
+    "userQuestions": true,
+    "turnEnd": true
+  },
+  "query": {
+    "prefixes": ["#进度", "#状态", "#progress", "#status"]
+  }
+}

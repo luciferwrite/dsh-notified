@@ -1,0 +1,15 @@
+# dsh-qq-notifier bundle patch：把通知器宿主挂进 DSH 的插件树。
+#
+# 目标机器上需要改的通常只有两项（也可以改 config.json，二选一，config.json 优先）：
+#   ownerQQ   —— 接收通知的 QQ 号
+#   workspace —— 要监控的工作区绝对路径（留空则监控 DSH 下所有会话）
+#
+# SnowLuma 的安装位置、OneBot 端口和 access token 由 notifier.mjs 自动发现，
+# 不需要在这里配置。
+- insert:
+    - id: qq-notifier-host
+      name: 'dsh-qq-notifier'
+      config:
+        ownerQQ: 0
+        workspace: ''
+        restartDelayMs: 5000
