@@ -14,12 +14,12 @@
 
 ## 1. 拷贝插件包
 
-把整个 `dsh-plugin` 目录拷到目标机器任意位置，例如 `D:\QQBot\notifier\dsh-plugin`。
+把本仓库整个目录拷到目标机器任意位置，例如 `C:\Tools\dsh-qq-notifier`（路径随意，没有硬编码）。
 
 ## 2. 装依赖
 
 ```bat
-cd /d D:\QQBot\notifier\dsh-plugin
+cd /d C:\Tools\dsh-qq-notifier
 npm install --omit=dev
 ```
 
@@ -28,7 +28,7 @@ npm install --omit=dev
 ## 3. 跑安装脚本
 
 ```bat
-cd /d D:\QQBot\notifier\dsh-plugin
+cd /d C:\Tools\dsh-qq-notifier
 node install.mjs
 ```
 
